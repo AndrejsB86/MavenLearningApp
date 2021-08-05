@@ -6,12 +6,12 @@
         <input type="text" name="tag" placeholder="Insert tag">
         <button type="submit">Add</button>
     </form>
-
-
 </div>
-
-
 <div>List of messages</div>
+<form method="post" action="filter">
+    <input type="text" name="filter">
+    <button type="submit">Search</button>
+</form>
 {{#messages}}
     <div>
         <b>{{id}}</b>
